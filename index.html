@@ -59,7 +59,7 @@
 
 <div class="flex items-center gap-4">
 
-<img src="img/logo.png" class="w-16">
+<img src="img/logo.jpeg" class="w-16">
 
 <div>
 
@@ -100,58 +100,52 @@ Get Quote
 
 <!-- HERO -->
 
-<section class="hero h-screen flex items-center">
+<section class="relative h-screen overflow-hidden">
 
-<div class="max-w-7xl mx-auto px-6">
+    <video autoplay muted loop playsinline
+        class="absolute inset-0 w-full h-full object-cover">
+        <source src="https://.../welding.mp4" type="video/mp4">
+    </video>
 
-<div class="max-w-3xl">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
 
-<p class="uppercase tracking-[6px] text-red-500">
+    <div class="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">
 
-Certified Welding Company
+        <div class="max-w-3xl">
 
-</p>
+            <span class="inline-block bg-red-600/20 border border-red-500 px-5 py-2 rounded-full text-red-400 uppercase tracking-[4px]">
+                Certified Welding Experts
+            </span>
 
-<h1 class="text-6xl lg:text-7xl font-extrabold mt-5 leading-tight">
+            <h1 class="text-6xl lg:text-8xl font-black mt-8 leading-none">
 
-Industrial Welding
+                Precision
+                <span class="text-red-600">Metal</span>
+                Fabrication
 
-<span class="text-red-500">
+            </h1>
 
-Solutions
+            <p class="text-stone-300 text-xl mt-8 max-w-xl">
+                High-quality industrial welding, fabrication and structural steel
+                solutions throughout France.
+            </p>
 
-</span>
+            <div class="flex gap-5 mt-10">
 
-</h1>
+                <a class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl">
+                    Request Quote
+                </a>
 
-<p class="mt-8 text-gray-300 text-lg">
+                <a class="border border-stone-500 px-8 py-4 rounded-xl hover:bg-white hover:text-black">
+                    View Projects
+                </a>
 
-Professional welding, fabrication and industrial steel
-construction with the highest quality standards.
+            </div>
 
-</p>
+        </div>
 
-<div class="flex gap-5 mt-10">
-
-<a href="contact.html"
-class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full">
-
-Request a Quote
-
-</a>
-
-<a href="services.html"
-class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black duration-300">
-
-View Projects
-
-</a>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 

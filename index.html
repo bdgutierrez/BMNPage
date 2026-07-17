@@ -1,139 +1,851 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMN Services de Soudure | Canada</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>BMN Services de Soudure</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+font-family:Inter,sans-serif;
+
+}
+
+.metal{
+
+background-image:url(images/metal.jpg);
+background-size:cover;
+
+}
+
+</style>
+
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
 
-  <!-- Navbar -->
-  <header class="bg-gray-900 text-white fixed w-full z-50 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="flex items-center space-x-3">
-        <img src="logo.png" alt="BMN Services de Soudure" class="h-10">
-        <span class="font-bold text-xl text-red-600">BMN Services de Soudure</span>
-      </div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#hero" class="hover:text-red-500">Accueil</a>
-        <a href="#services" class="hover:text-red-500">Services</a>
-        <a href="#projects" class="hover:text-red-500">Projets</a>
-        <a href="#about" class="hover:text-red-500">À propos</a>
-        <a href="#contact" class="hover:text-red-500">Contact</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
-      <a href="#hero" class="block px-4 py-2 hover:bg-red-600">Accueil</a>
-      <a href="#services" class="block px-4 py-2 hover:bg-red-600">Services</a>
-      <a href="#projects" class="block px-4 py-2 hover:bg-red-600">Projets</a>
-      <a href="#about" class="block px-4 py-2 hover:bg-red-600">À propos</a>
-      <a href="#contact" class="block px-4 py-2 hover:bg-red-600">Contact</a>
-    </div>
-  </header>
+<body class="bg-white text-white">
 
-  <!-- Hero Section -->
-  <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80');">
-    <div class="bg-black bg-opacity-60 p-8 rounded fade-in">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-red-500">BMN Services de Soudure</h1>
-      <p class="text-lg md:text-2xl mb-6">Solutions professionnelles de soudure au Canada</p>
-      <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded font-semibold transition">Demander un devis</a>
-    </div>
-  </section>
+<div id="menu"></div>
 
-  <!-- Services Section -->
-  <section id="services" class="py-20 bg-gray-100">
-    <div class="container mx-auto text-center fade-in">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10">Nos Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1602526216433-6e7b6b8b8b8b?auto=format&fit=crop&w=800&q=80" alt="Soudure industrielle" class="rounded mb-4">
-          <h3 class="text-xl font-semibold text-red-600 mb-2">Soudure industrielle</h3>
-          <p>Services de soudure pour structures métalliques, usines et équipements lourds.</p>
+<!-- HEADER -->
+
+<section class="relative min-h-screen overflow-hidden bg-stone-950 text-white">
+
+    <!-- VIDEO -->
+    <div class="absolute inset-0 lg:left-[42%]">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-full object-cover">
+
+            <source
+                src="https://www.pexels.com/es-es/download/video/10641848/"
+                type="video/mp4">
+
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/55 lg:bg-black/35"></div>
+
+    </div>
+
+    <!-- PANEL IZQUIERDO -->
+    <div
+        class="absolute inset-0 bg-stone-950/90 lg:bg-stone-950
+               lg:w-[58%]
+               lg:[clip-path:polygon(0_0,82%_0,100%_50%,82%_100%,0_100%)]">
+    </div>
+
+
+    <!-- CONTENIDO -->
+    <div
+        class="relative z-20 max-w-7xl mx-auto
+               min-h-screen
+               flex items-center
+               px-6 sm:px-10 lg:px-12">
+
+        <div class="max-w-xl py-24 lg:py-0">
+
+            <!-- SUBTITULO -->
+            <p class="uppercase tracking-[4px] sm:tracking-[6px] text-xs sm:text-sm text-red-500 font-medium">
+                Entreprise canadienne
+            </p>
+
+            <!-- TITULO -->
+            <h1
+                class="mt-5
+                       text-4xl
+                       sm:text-5xl
+                       md:text-6xl
+                       lg:text-7xl
+                       font-bold
+                       leading-[0.95]">
+
+                Soudure
+
+                <span class="block text-red-600">
+                    de précision
+                </span>
+
+            </h1>
+
+            <!-- DESCRIPCION -->
+            <p
+                class="mt-6
+                       text-base
+                       sm:text-lg
+                       text-stone-300
+                       leading-relaxed
+                       max-w-lg">
+
+                Des solutions professionnelles de soudage,
+                de fabrication métallique et d'acier structural,
+                conçues pour durer partout au Canada.
+
+            </p>
+
+            <!-- BOTONES -->
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+
+                <a
+                    href="contact.html"
+                    class="px-7 py-4
+                           text-center
+                           border border-red-600
+                           hover:bg-red-600
+                           transition
+                           uppercase
+                           tracking-[2px]
+                           text-sm">
+
+                    Demander un devis
+
+                </a>
+
+                <a
+                    href="services.html"
+                    class="px-7 py-4
+                           text-center
+                           border border-stone-500
+                           hover:border-white
+                           transition
+                           uppercase
+                           tracking-[2px]
+                           text-sm
+                           text-stone-300">
+
+                    Nos projets
+
+                </a>
+
+            </div>
+
         </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1581092334651-ddf4c9f3f3f3?auto=format&fit=crop&w=800&q=80" alt="Soudure mobile" class="rounded mb-4">
-          <h3 class="text-xl font-semibold text-red-600 mb-2">Soudure mobile</h3>
-          <p>Interventions rapides sur site avec équipement mobile complet.</p>
+
+    </div>
+
+    <!-- Texto inferior -->
+    <div
+        class="hidden lg:block absolute bottom-10 right-10 text-right z-30">
+
+        <p class="uppercase tracking-[5px] text-sm">
+            Fabriqué au Canada
+        </p>
+
+        <p class="text-stone-400 text-xs mt-2">
+            Précision • Qualité • Fiabilité
+        </p>
+
+    </div>
+
+    <!-- Gradiente -->
+    <div
+        class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-stone-950 to-transparent">
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="py-24 bg-stone-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- HEADER -->
+
+        <div class="flex flex-col md:flex-row md:items-end
+                    justify-between gap-6 mb-14">
+
+            <div>
+
+                <span class="text-red-600 uppercase
+                             tracking-[4px] text-sm font-semibold">
+
+                    What We Do
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl
+                           font-black uppercase mt-3
+                           text-stone-900">
+
+                    Our Services
+
+                </h2>
+
+            </div>
+
+            <p class="max-w-md text-stone-500 leading-relaxed">
+
+                Professional welding and metal fabrication solutions
+                designed for industrial, commercial and construction projects.
+
+            </p>
+
         </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1602526216433-6e7b6b8b8b8b?auto=format&fit=crop&w=800&q=80" alt="Réparation métallique" class="rounded mb-4">
-          <h3 class="text-xl font-semibold text-red-600 mb-2">Réparation métallique</h3>
-          <p>Réparation et entretien de pièces métalliques pour prolonger leur durée de vie.</p>
+
+
+        <!-- SERVICES GRID -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="group bg-white
+                        border border-stone-200
+                        overflow-hidden
+                        shadow-sm
+                        hover:shadow-2xl
+                        duration-500">
+
+                <div class="relative h-64 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85"
+                        alt="Metal fabrication"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110
+                               duration-700">
+
+                    <div class="absolute inset-0
+                                bg-gradient-to-t
+                                from-black/80
+                                via-black/20
+                                to-transparent">
+                    </div>
+
+                    <span class="absolute top-5 left-5
+                                 bg-red-600 text-white
+                                 px-3 py-2
+                                 text-xs font-bold
+                                 uppercase tracking-widest">
+
+                        01
+
+                    </span>
+
+                </div>
+
+
+                <div class="p-7">
+
+                    <h3 class="font-bold text-xl uppercase
+                               text-stone-900">
+
+                        Metallic Fab
+
+                    </h3>
+
+                    <p class="mt-4 text-stone-500 leading-relaxed">
+
+                        Fabrication métallique sur mesure pour
+                        différents types de projets industriels.
+
+                    </p>
+
+                    <a href="services.html"
+                       class="inline-flex items-center gap-3
+                              mt-6 text-red-600
+                              font-semibold uppercase
+                              text-xs tracking-widest
+                              group-hover:gap-5 duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="group bg-white
+                        border border-stone-200
+                        overflow-hidden
+                        shadow-sm
+                        hover:shadow-2xl
+                        duration-500">
+
+                <div class="relative h-64 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1000&q=85"
+                        alt="Structural welding"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110
+                               duration-700">
+
+                    <div class="absolute inset-0
+                                bg-gradient-to-t
+                                from-black/80
+                                via-black/20
+                                to-transparent">
+                    </div>
+
+                    <span class="absolute top-5 left-5
+                                 bg-red-600 text-white
+                                 px-3 py-2
+                                 text-xs font-bold
+                                 uppercase tracking-widest">
+
+                        02
+
+                    </span>
+
+                </div>
+
+
+                <div class="p-7">
+
+                    <h3 class="font-bold text-xl uppercase
+                               text-stone-900">
+
+                        Structural Welding
+
+                    </h3>
+
+                    <p class="mt-4 text-stone-500 leading-relaxed">
+
+                        Soudure structurale certifiée pour
+                        les projets commerciaux et industriels.
+
+                    </p>
+
+                    <a href="services.html"
+                       class="inline-flex items-center gap-3
+                              mt-6 text-red-600
+                              font-semibold uppercase
+                              text-xs tracking-widest
+                              group-hover:gap-5 duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="group bg-white
+                        border border-stone-200
+                        overflow-hidden
+                        shadow-sm
+                        hover:shadow-2xl
+                        duration-500">
+
+                <div class="relative h-64 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                        alt="Mobile welding services"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110
+                               duration-700">
+
+                    <div class="absolute inset-0
+                                bg-gradient-to-t
+                                from-black/80
+                                via-black/20
+                                to-transparent">
+                    </div>
+
+                    <span class="absolute top-5 left-5
+                                 bg-red-600 text-white
+                                 px-3 py-2
+                                 text-xs font-bold
+                                 uppercase tracking-widest">
+
+                        03
+
+                    </span>
+
+                </div>
+
+
+                <div class="p-7">
+
+                    <h3 class="font-bold text-xl uppercase
+                               text-stone-900">
+
+                        Mobile Services
+
+                    </h3>
+
+                    <p class="mt-4 text-stone-500 leading-relaxed">
+
+                        Intervention directement sur chantier
+                        avec notre équipement mobile.
+
+                    </p>
+
+                    <a href="services.html"
+                       class="inline-flex items-center gap-3
+                              mt-6 text-red-600
+                              font-semibold uppercase
+                              text-xs tracking-widest
+                              group-hover:gap-5 duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="group bg-white
+                        border border-stone-200
+                        overflow-hidden
+                        shadow-sm
+                        hover:shadow-2xl
+                        duration-500">
+
+                <div class="relative h-64 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
+                        alt="Specialized alloys"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110
+                               duration-700">
+
+                    <div class="absolute inset-0
+                                bg-gradient-to-t
+                                from-black/80
+                                via-black/20
+                                to-transparent">
+                    </div>
+
+                    <span class="absolute top-5 left-5
+                                 bg-red-600 text-white
+                                 px-3 py-2
+                                 text-xs font-bold
+                                 uppercase tracking-widest">
+
+                        04
+
+                    </span>
+
+                </div>
+
+
+                <div class="p-7">
+
+                    <h3 class="font-bold text-xl uppercase
+                               text-stone-900">
+
+                        Specialized Alloys
+
+                    </h3>
+
+                    <p class="mt-4 text-stone-500 leading-relaxed">
+
+                        Acier inoxydable et alliages spéciaux
+                        pour des applications spécifiques.
+
+                    </p>
+
+                    <a href="services.html"
+                       class="inline-flex items-center gap-3
+                              mt-6 text-red-600
+                              font-semibold uppercase
+                              text-xs tracking-widest
+                              group-hover:gap-5 duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-900 text-white">
-    <div class="container mx-auto text-center fade-in">
-      <h2 class="text-3xl font-bold mb-10 text-red-500">Nos Projets</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b6b6b6b?auto=format&fit=crop&w=800&q=80" alt="Projet 1" class="rounded shadow-lg hover:scale-105 transition">
-        <img src="https://images.unsplash.com/photo-1602526216433-6e7b6b8b8b8b?auto=format&fit=crop&w=800&q=80" alt="Projet 2" class="rounded shadow-lg hover:scale-105 transition">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Projet 3" class="rounded shadow-lg hover:scale-105 transition">
-      </div>
+</section>
+
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6
+                grid lg:grid-cols-2
+                gap-16 items-center">
+
+
+        <!-- IMAGE -->
+
+        <div class="relative">
+
+            <div class="absolute -top-5 -left-5
+                        w-full h-full
+                        border-2 border-red-600">
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"
+                alt="BMN welding team"
+                class="relative z-10
+                       w-full h-[550px]
+                       object-cover
+                       shadow-2xl">
+
+            <div class="absolute bottom-6 right-6 z-20
+                        bg-red-600 text-white
+                        px-6 py-5">
+
+                <p class="text-4xl font-black">
+                    20+
+                </p>
+
+                <p class="text-xs uppercase
+                          tracking-widest">
+
+                    Years Experience
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div>
+
+            <span class="text-red-600 uppercase
+                         tracking-[4px] text-sm font-semibold">
+
+                About BMN
+
+            </span>
+
+            <h2 class="text-4xl md:text-5xl
+                       font-black uppercase
+                       text-stone-900 mt-4">
+
+                Built With
+                <span class="text-red-600">
+                    Precision.
+                </span>
+
+            </h2>
+
+            <p class="mt-8 leading-8
+                      text-stone-600 text-lg">
+
+                Depuis plusieurs années, BMN Services accompagne
+                les entreprises canadiennes dans leurs projets de
+                soudure industrielle, fabrication métallique et
+                structures d'acier.
+
+            </p>
+
+            <p class="mt-5 leading-8
+                      text-stone-500">
+
+                Notre équipe met son expertise, sa précision et son
+                savoir-faire au service de projets durables,
+                sécuritaires et construits pour durer.
+
+            </p>
+
+            <a href="about.html"
+               class="inline-flex items-center gap-4
+                      mt-8
+                      bg-stone-900
+                      hover:bg-red-600
+                      text-white
+                      px-7 py-4
+                      uppercase
+                      text-sm
+                      tracking-widest
+                      duration-300">
+
+                Learn More
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+        </div>
+
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-100">
-    <div class="container mx-auto flex flex-col md:flex-row items-center fade-in">
-      <div class="md:w-1/2 mb-8 md:mb-0">
-        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b6b6b6b?auto=format&fit=crop&w=800&q=80" alt="À propos" class="rounded shadow-lg">
-      </div>
-      <div class="md:w-1/2 md:pl-10">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">À propos de BMN</h2>
-        <p class="mb-4">BMN Services de Soudure est une entreprise canadienne spécialisée dans la soudure industrielle, mobile et de réparation. Avec des années d’expérience, notre équipe garantit des résultats précis, durables et sécuritaires.</p>
-        <p>Notre mission est de fournir des solutions de soudure fiables et efficaces pour les entreprises et particuliers à travers le Canada.</p>
-      </div>
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="bg-stone-100 py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+
+        <!-- HEADER -->
+
+        <div class="flex flex-col md:flex-row
+                    md:items-end
+                    justify-between
+                    gap-6 mb-12">
+
+            <div>
+
+                <span class="text-red-600 uppercase
+                             tracking-[4px] text-sm font-semibold">
+
+                    Our Work
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl
+                           font-black uppercase
+                           text-stone-900 mt-3">
+
+                    Recent Projects
+
+                </h2>
+
+            </div>
+
+            <a href="services.html"
+               class="text-red-600
+                      uppercase
+                      text-sm
+                      font-bold
+                      tracking-widest">
+
+                View All Projects →
+
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT GRID -->
+
+        <div class="grid grid-cols-2
+                    lg:grid-cols-4
+                    gap-4">
+
+
+            <div class="group relative
+                        overflow-hidden
+                        h-72">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1000&q=85"
+                    alt="Industrial project"
+                    class="w-full h-full object-cover
+                           group-hover:scale-110
+                           duration-700">
+
+                <div class="absolute inset-0
+                            bg-black/0
+                            group-hover:bg-black/50
+                            duration-500">
+
+                </div>
+
+            </div>
+
+
+            <div class="group relative
+                        overflow-hidden
+                        h-72">
+
+                <img
+                    src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1000&q=85"
+                    alt="Welding project"
+                    class="w-full h-full object-cover
+                           group-hover:scale-110
+                           duration-700">
+
+                <div class="absolute inset-0
+                            bg-black/0
+                            group-hover:bg-black/50
+                            duration-500">
+
+                </div>
+
+            </div>
+
+
+            <div class="group relative
+                        overflow-hidden
+                        h-72">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                    alt="Construction project"
+                    class="w-full h-full object-cover
+                           group-hover:scale-110
+                           duration-700">
+
+                <div class="absolute inset-0
+                            bg-black/0
+                            group-hover:bg-black/50
+                            duration-500">
+
+                </div>
+
+            </div>
+
+
+            <div class="group relative
+                        overflow-hidden
+                        h-72">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
+                    alt="Metal fabrication project"
+                    class="w-full h-full object-cover
+                           group-hover:scale-110
+                           duration-700">
+
+                <div class="absolute inset-0
+                            bg-black/0
+                            group-hover:bg-black/50
+                            duration-500">
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-900 text-white">
-    <div class="container mx-auto text-center fade-in">
-      <h2 class="text-3xl font-bold mb-10 text-red-500">Contactez-nous</h2>
-      <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Nom" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-red-500">
-        <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-red-500">
-        <textarea placeholder="Message" rows="5" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-red-500"></textarea>
-        <button type="submit" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded font-semibold transition">Envoyer</button>
-      </form>
-    </div>
-  </section>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 text-center py-6">
-    <p>&copy; 2026 BMN Services de Soudure. Tous droits réservés.</p>
-  </footer>
+<!-- CTA -->
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+<section class="bg-red-700 text-white py-24">
 
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    fadeEls.forEach(el => observer.observe(el));
-  </script>
+<div class="max-w-5xl mx-auto text-center">
 
+<h2 class="text-5xl font-bold">
+
+Prêt à commencer votre projet ?
+
+</h2>
+
+<p class="mt-6 text-xl">
+
+Notre équipe est prête à vous accompagner.
+
+</p>
+
+<a
+class="inline-block mt-10 bg-white text-red-700 px-10 py-4 rounded font-bold">
+
+Demander une soumission
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="py-24">
+
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+  
+
+<form class="space-y-5">
+
+<input
+class="w-full border p-4"
+placeholder="Nom">
+
+<input
+class="w-full border p-4"
+placeholder="Email">
+
+<textarea
+rows="5"
+class="w-full border p-4"
+placeholder="Message"></textarea>
+
+<button
+class="bg-red-700 text-white px-8 py-4">
+
+Envoyer
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<div id="footer">
+
+<script src="js/components.js"></script>
 </body>
+
 </html>

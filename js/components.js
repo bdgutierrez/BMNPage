@@ -2,46 +2,63 @@ async function loadComponent(id, file) {
 
     const element = document.getElementById(id);
 
-    if (!element) {
-
-        console.error(`No existe el elemento #${id}`);
-
-        return;
-
-    }
+    if (!element) return;
 
     try {
 
         const response = await fetch(file);
 
-        if (!response.ok) {
-
-            throw new Error(
-                `No se pudo cargar ${file}. Error: ${response.status}`
-            );
-
-        }
-
         const html = await response.text();
 
         element.innerHTML = html;
 
-        console.log(`${file} cargado correctamente`);
+        // Inicializar el menú móvil después de cargarlo
+        if (id === "menu") {
+
+            initMobileMenu();
+
+        }
 
     } catch (error) {
 
-        console.error(error);
+        console.error(`Error cargando ${file}:`, error);
 
     }
 
 }
 
 
-/*
-|--------------------------------------------------------------------------
-| Cargar componentes
-|--------------------------------------------------------------------------
-*/
+function initMobileMenu() {
+
+    const button = document.getElementById("mobile-menu-button");
+
+    const menu = document.getElementById("mobile-menu");
+
+    if (!button || !menu) return;
+
+
+    button.addEventListener("click", function () {
+
+        menu.classList.toggle("hidden");
+
+    });
+
+
+    // Cerrar el menú al hacer clic en un enlace
+    const links = menu.querySelectorAll("a");
+
+    links.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            menu.classList.add("hidden");
+
+        });
+
+    });
+
+}
+
 
 loadComponent("menu", "layouts/Menu.html");
 

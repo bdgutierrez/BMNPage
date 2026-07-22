@@ -12,7 +12,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
 
 body{
@@ -36,11 +37,11 @@ background-size:cover;
 
 <div id="menu"></div>
 
-<!-- HEADER -->
+<!-- EN-TÊTE -->
 
 <section class="relative min-h-screen overflow-hidden bg-stone-950 text-white">
 
-    <!-- VIDEO -->
+    <!-- VIDÉO -->
     <div class="absolute inset-0 lg:left-[42%]">
 
         <video
@@ -56,20 +57,24 @@ background-size:cover;
 
         </video>
 
-        <!-- Overlay -->
+        <!-- Superposition -->
         <div class="absolute inset-0 bg-black/55 lg:bg-black/35"></div>
 
     </div>
 
-    <!-- PANEL IZQUIERDO -->
-    <div
-        class="absolute inset-0 bg-stone-950/90 lg:bg-stone-950
-               lg:w-[58%]
-               lg:[clip-path:polygon(0_0,82%_0,100%_50%,82%_100%,0_100%)]">
+   <!-- PANNEAU DE GAUCHE -->
+<div
+    class="absolute inset-y-0 left-0
+           w-full lg:w-[45%]
+           bg-stone-950">
+
+    <div class="absolute top-0 -right-20 h-full w-40
+                bg-stone-950
+                skew-x-[-12deg] origin-left">
     </div>
 
-
-    <!-- CONTENIDO -->
+</div>
+    <!-- CONTENU -->
     <div
         class="relative z-20 max-w-7xl mx-auto
                min-h-screen
@@ -78,12 +83,12 @@ background-size:cover;
 
         <div class="max-w-xl py-24 lg:py-0">
 
-            <!-- SUBTITULO -->
+            <!-- SOUS-TITRE -->
             <p class="uppercase tracking-[4px] sm:tracking-[6px] text-xs sm:text-sm text-red-500 font-medium">
-                Entreprise canadienne
+                Entreprise québécoise
             </p>
 
-            <!-- TITULO -->
+            <!-- TITRE -->
             <h1
                 class="mt-5
                        text-4xl
@@ -101,67 +106,88 @@ background-size:cover;
 
             </h1>
 
-            <!-- DESCRIPCION -->
-            <p
-                class="mt-6
-                       text-base
-                       sm:text-lg
-                       text-stone-300
-                       leading-relaxed
-                       max-w-lg">
+            <!-- DESCRIPTION -->
+<p
+    class="mt-6
+           text-base
+           sm:text-lg
+           text-stone-300
+           leading-relaxed
+           max-w-lg">
 
-                Des solutions professionnelles de soudage,
-                de fabrication métallique et d'acier structural,
-                conçues pour durer partout au Canada.
+    Des solutions professionnelles en soudage,
+    en fabrication métallique et en acier de structure,
+    conçues pour durer partout au Québec.
 
+</p>
+
+<!-- AVANTAGES -->
+<div class="mt-10 flex flex-wrap gap-8">
+
+    <div class="flex items-center gap-3">
+
+        <div class="w-12 h-12 rounded-full
+                    bg-red-600/15
+                    border border-red-600/30
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-industry text-red-500 text-xl"></i>
+
+        </div>
+
+        <div>
+
+            <p class="font-semibold">
+                Qualité garantie
             </p>
 
-            <!-- BOTONES -->
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-
-                <a
-                    href="contact.html"
-                    class="px-7 py-4
-                           text-center
-                           border border-red-600
-                           hover:bg-red-600
-                           transition
-                           uppercase
-                           tracking-[2px]
-                           text-sm">
-
-                    Demander un devis
-
-                </a>
-
-                <a
-                    href="services.html"
-                    class="px-7 py-4
-                           text-center
-                           border border-stone-500
-                           hover:border-white
-                           transition
-                           uppercase
-                           tracking-[2px]
-                           text-sm
-                           text-stone-300">
-
-                    Nos projets
-
-                </a>
-
-            </div>
+            <p class="text-sm text-stone-400">
+                Travail certifié
+            </p>
 
         </div>
 
     </div>
 
-    <!-- Texto inferior -->
+    <div class="flex items-center gap-3">
+
+        <div class="w-12 h-12 rounded-full
+                    bg-red-600/15
+                    border border-red-600/30
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-award text-red-500 text-xl"></i>
+
+        </div>
+
+        <div>
+
+            <p class="font-semibold">
+                Satisfaction à 100 %
+            </p>
+
+            <p class="text-sm text-stone-400">
+                Service de confiance
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+     
+
+        </div>
+
+    </div>
+
+    <!-- TEXTE AU BAS -->
     <div
         class="hidden lg:block absolute bottom-10 right-10 text-right z-30">
 
         <p class="uppercase tracking-[5px] text-sm">
-            Fabriqué au Canada
+            Fabriqué au Québec
         </p>
 
         <p class="text-stone-400 text-xs mt-2">
@@ -170,13 +196,12 @@ background-size:cover;
 
     </div>
 
-    <!-- Gradiente -->
+    <!-- DÉGRADÉ -->
     <div
         class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-stone-950 to-transparent">
     </div>
 
 </section>
-
 
 
 
@@ -189,8 +214,7 @@ background-size:cover;
 
     <div class="max-w-7xl mx-auto px-6">
 
-        <!-- HEADER -->
-
+        <!-- EN-TÊTE -->
         <div class="flex flex-col md:flex-row md:items-end
                     justify-between gap-6 mb-14">
 
@@ -199,7 +223,7 @@ background-size:cover;
                 <span class="text-red-600 uppercase
                              tracking-[4px] text-sm font-semibold">
 
-                    What We Do
+                    Ce que nous faisons
 
                 </span>
 
@@ -207,7 +231,7 @@ background-size:cover;
                            font-black uppercase mt-3
                            text-stone-900">
 
-                    Our Services
+                    Nos services
 
                 </h2>
 
@@ -215,21 +239,16 @@ background-size:cover;
 
             <p class="max-w-md text-stone-500 leading-relaxed">
 
-                Professional welding and metal fabrication solutions
-                designed for industrial, commercial and construction projects.
+                Tes besoins, nos solutions.
 
             </p>
 
         </div>
 
-
-        <!-- SERVICES GRID -->
-
+        <!-- GRILLE DES SERVICES -->
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-
             <!-- SERVICE 1 -->
-
             <div class="group bg-white
                         border border-stone-200
                         overflow-hidden
@@ -241,7 +260,7 @@ background-size:cover;
 
                     <img
                         src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85"
-                        alt="Metal fabrication"
+                        alt="Fabrication métallique"
                         class="w-full h-full object-cover
                                group-hover:scale-110
                                duration-700">
@@ -265,41 +284,28 @@ background-size:cover;
 
                 </div>
 
-
                 <div class="p-7">
 
                     <h3 class="font-bold text-xl uppercase
                                text-stone-900">
 
-                        Metallic Fab
+                        Fabrication
 
                     </h3>
 
                     <p class="mt-4 text-stone-500 leading-relaxed">
 
-                        Fabrication métallique sur mesure pour
-                        différents types de projets industriels.
+                        BMN spécialisés dans la fabrication sur mesure de tuyaux, structures, 
+                        supports et réservoirs, que ce soit en aluminium, acier ou acier inoxydable.
 
                     </p>
 
-                    <a href="services.html"
-                       class="inline-flex items-center gap-3
-                              mt-6 text-red-600
-                              font-semibold uppercase
-                              text-xs tracking-widest
-                              group-hover:gap-5 duration-300">
-
-                        Learn More →
-
-                    </a>
 
                 </div>
 
             </div>
 
-
             <!-- SERVICE 2 -->
-
             <div class="group bg-white
                         border border-stone-200
                         overflow-hidden
@@ -311,7 +317,7 @@ background-size:cover;
 
                     <img
                         src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1000&q=85"
-                        alt="Structural welding"
+                        alt="Soudure structurale"
                         class="w-full h-full object-cover
                                group-hover:scale-110
                                duration-700">
@@ -335,41 +341,29 @@ background-size:cover;
 
                 </div>
 
-
                 <div class="p-7">
 
                     <h3 class="font-bold text-xl uppercase
                                text-stone-900">
 
-                        Structural Welding
+                        Réparation 
 
                     </h3>
 
                     <p class="mt-4 text-stone-500 leading-relaxed">
 
-                        Soudure structurale certifiée pour
-                        les projets commerciaux et industriels.
+                        Réparation de tuyauteries, de structures, 
+                        de supports, de réservoirs et de machines en aluminium, en acier et en acier inoxydable.
 
                     </p>
 
-                    <a href="services.html"
-                       class="inline-flex items-center gap-3
-                              mt-6 text-red-600
-                              font-semibold uppercase
-                              text-xs tracking-widest
-                              group-hover:gap-5 duration-300">
-
-                        Learn More →
-
-                    </a>
+                    
 
                 </div>
 
             </div>
 
-
             <!-- SERVICE 3 -->
-
             <div class="group bg-white
                         border border-stone-200
                         overflow-hidden
@@ -381,7 +375,7 @@ background-size:cover;
 
                     <img
                         src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
-                        alt="Mobile welding services"
+                        alt="Services mobiles"
                         class="w-full h-full object-cover
                                group-hover:scale-110
                                duration-700">
@@ -405,41 +399,28 @@ background-size:cover;
 
                 </div>
 
-
                 <div class="p-7">
 
                     <h3 class="font-bold text-xl uppercase
                                text-stone-900">
 
-                        Mobile Services
+                        Montage
 
                     </h3>
 
                     <p class="mt-4 text-stone-500 leading-relaxed">
 
-                        Intervention directement sur chantier
-                        avec notre équipement mobile.
-
+                        Montage et installation de tuyauteries, de structures, de supports, 
+                        de réservoirs et de machines en aluminium, en acier et en acier inoxydable.
                     </p>
 
-                    <a href="services.html"
-                       class="inline-flex items-center gap-3
-                              mt-6 text-red-600
-                              font-semibold uppercase
-                              text-xs tracking-widest
-                              group-hover:gap-5 duration-300">
-
-                        Learn More →
-
-                    </a>
+                    
 
                 </div>
 
             </div>
 
-
             <!-- SERVICE 4 -->
-
             <div class="group bg-white
                         border border-stone-200
                         overflow-hidden
@@ -450,8 +431,8 @@ background-size:cover;
                 <div class="relative h-64 overflow-hidden">
 
                     <img
-                        src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
-                        alt="Specialized alloys"
+                        src="https://images.pexels.com/photos/33175648/pexels-photo-33175648.jpeg"
+                        alt="Alliages spécialisés"
                         class="w-full h-full object-cover
                                group-hover:scale-110
                                duration-700">
@@ -475,33 +456,22 @@ background-size:cover;
 
                 </div>
 
-
                 <div class="p-7">
 
                     <h3 class="font-bold text-xl uppercase
                                text-stone-900">
 
-                        Specialized Alloys
+                        Soutien aux entreprises 
 
                     </h3>
 
                     <p class="mt-4 text-stone-500 leading-relaxed">
 
-                        Acier inoxydable et alliages spéciaux
-                        pour des applications spécifiques.
-
+                        Nous sommes en mesure de former une équipe de professionnels qualifiés, 
+                        adaptée à vos besoins, afin de vous dépanner lorsque vous faites face à un retard de production ou à un manque de main-d'œuvre.
                     </p>
 
-                    <a href="services.html"
-                       class="inline-flex items-center gap-3
-                              mt-6 text-red-600
-                              font-semibold uppercase
-                              text-xs tracking-widest
-                              group-hover:gap-5 duration-300">
-
-                        Learn More →
-
-                    </a>
+                    
 
                 </div>
 
@@ -517,7 +487,7 @@ background-size:cover;
 
 
 <!-- =========================
-     ABOUT
+     À PROPOS
 ========================= -->
 
 <section class="py-28 bg-white">
@@ -526,9 +496,7 @@ background-size:cover;
                 grid lg:grid-cols-2
                 gap-16 items-center">
 
-
         <!-- IMAGE -->
-
         <div class="relative">
 
             <div class="absolute -top-5 -left-5
@@ -537,41 +505,44 @@ background-size:cover;
             </div>
 
             <img
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"
-                alt="BMN welding team"
+                src="img/1.png"
+                alt="Équipe de soudure BMN"
                 class="relative z-10
                        w-full h-[550px]
                        object-cover
                        shadow-2xl">
 
             <div class="absolute bottom-6 right-6 z-20
-                        bg-red-600 text-white
-                        px-6 py-5">
+            bg-red-600 text-white
+            px-6 py-5
+            flex items-center gap-4
+            shadow-xl">
 
-                <p class="text-4xl font-black">
-                    20+
-                </p>
+    <i class="fa-solid fa-award text-4xl"></i>
 
-                <p class="text-xs uppercase
-                          tracking-widest">
+    <div>
 
-                    Years Experience
+        <p class="text-lg font-bold uppercase">
+            Haute qualité
+        </p>
 
-                </p>
+        <p class="text-xs uppercase tracking-widest text-red-100">
+            Travail professionnel
+        </p>
 
-            </div>
+    </div>
+
+</div>
 
         </div>
 
-
-        <!-- CONTENT -->
-
+        <!-- CONTENU -->
         <div>
 
             <span class="text-red-600 uppercase
                          tracking-[4px] text-sm font-semibold">
 
-                About BMN
+                À propos de BMN
 
             </span>
 
@@ -579,9 +550,9 @@ background-size:cover;
                        font-black uppercase
                        text-stone-900 mt-4">
 
-                Built With
+                Construit avec
                 <span class="text-red-600">
-                    Precision.
+                    précision.
                 </span>
 
             </h2>
@@ -589,10 +560,8 @@ background-size:cover;
             <p class="mt-8 leading-8
                       text-stone-600 text-lg">
 
-                Depuis plusieurs années, BMN Services accompagne
-                les entreprises canadiennes dans leurs projets de
-                soudure industrielle, fabrication métallique et
-                structures d'acier.
+                BMN SERVICES DE SOUDURE offre ses services à tous, que ce soit dans la minière, dans l’alimentation, l’agriculture, et bien d'autres domaines. On peut travailler sur tout type de surface avec une expertise de qualité depuis plus de 20 ans. Que ce soit du stainless, 
+                de l’acier ou même de l’aluminium nos experts n’auront aucun problème à vous satisfaire.
 
             </p>
 
@@ -601,11 +570,11 @@ background-size:cover;
 
                 Notre équipe met son expertise, sa précision et son
                 savoir-faire au service de projets durables,
-                sécuritaires et construits pour durer.
+                sécuritaires et conçus pour durer.
 
             </p>
 
-            <a href="about.html"
+            <a href="Acerca.html"
                class="inline-flex items-center gap-4
                       mt-8
                       bg-stone-900
@@ -617,7 +586,7 @@ background-size:cover;
                       tracking-widest
                       duration-300">
 
-                Learn More
+                En savoir plus
 
                 <span>
                     →
@@ -631,18 +600,15 @@ background-size:cover;
 
 </section>
 
-
 <!-- =========================
-     PROJECTS
+     SECTEURS D'ACTIVITÉ
 ========================= -->
 
 <section class="bg-stone-100 py-24">
 
     <div class="max-w-7xl mx-auto px-6">
 
-
-        <!-- HEADER -->
-
+        <!-- EN-TÊTE -->
         <div class="flex flex-col md:flex-row
                     md:items-end
                     justify-between
@@ -653,7 +619,7 @@ background-size:cover;
                 <span class="text-red-600 uppercase
                              tracking-[4px] text-sm font-semibold">
 
-                    Our Work
+                    Nos secteurs
 
                 </span>
 
@@ -661,111 +627,158 @@ background-size:cover;
                            font-black uppercase
                            text-stone-900 mt-3">
 
-                    Recent Projects
+                    Secteurs d'activité
 
                 </h2>
 
             </div>
 
-            <a href="services.html"
-               class="text-red-600
-                      uppercase
-                      text-sm
-                      font-bold
-                      tracking-widest">
-
-                View All Projects →
-
-            </a>
-
         </div>
 
-
-        <!-- PROJECT GRID -->
-
+        <!-- GRID -->
         <div class="grid grid-cols-2
                     lg:grid-cols-4
                     gap-4">
 
-
-            <div class="group relative
-                        overflow-hidden
-                        h-72">
+            <!-- 1 -->
+            <div class="group relative overflow-hidden h-72">
 
                 <img
-                    src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1000&q=85"
-                    alt="Industrial project"
+                    src="img/1.png"
+                    alt="Industrie manufacturière"
                     class="w-full h-full object-cover
                            group-hover:scale-110
                            duration-700">
 
-                <div class="absolute inset-0
-                            bg-black/0
-                            group-hover:bg-black/50
-                            duration-500">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/40 duration-500"></div>
+
+                <div class="absolute inset-x-0 bottom-0
+                            translate-y-full
+                            group-hover:translate-y-0
+                            duration-500
+                            bg-red-600/95
+                            text-white
+                            px-6 py-5">
+
+                    <h3 class="font-bold uppercase tracking-wider">
+                        Industrie manufacturière
+                    </h3>
 
                 </div>
 
             </div>
 
-
-            <div class="group relative
-                        overflow-hidden
-                        h-72">
+            <!-- 2 -->
+            <div class="group relative overflow-hidden h-72">
 
                 <img
-                    src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1000&q=85"
-                    alt="Welding project"
+                    src="https://images.pexels.com/photos/11679691/pexels-photo-11679691.jpeg"
+                    alt="Industrie alimentaire"
                     class="w-full h-full object-cover
                            group-hover:scale-110
                            duration-700">
 
-                <div class="absolute inset-0
-                            bg-black/0
-                            group-hover:bg-black/50
-                            duration-500">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/40 duration-500"></div>
+
+                <div class="absolute inset-x-0 bottom-0
+                            translate-y-full
+                            group-hover:translate-y-0
+                            duration-500
+                            bg-red-600/95
+                            text-white
+                            px-6 py-5">
+
+                    <h3 class="font-bold uppercase tracking-wider">
+                        Industrie alimentaire
+                    </h3>
 
                 </div>
 
             </div>
 
-
-            <div class="group relative
-                        overflow-hidden
-                        h-72">
+            <!-- 3 -->
+            <div class="group relative overflow-hidden h-72">
 
                 <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
-                    alt="Construction project"
+                    src="https://images.pexels.com/photos/35646266/pexels-photo-35646266.jpeg"
+                    alt="Industrie minière"
                     class="w-full h-full object-cover
                            group-hover:scale-110
                            duration-700">
 
-                <div class="absolute inset-0
-                            bg-black/0
-                            group-hover:bg-black/50
-                            duration-500">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/40 duration-500"></div>
+
+                <div class="absolute inset-x-0 bottom-0
+                            translate-y-full
+                            group-hover:translate-y-0
+                            duration-500
+                            bg-red-600/95
+                            text-white
+                            px-6 py-5">
+
+                    <h3 class="font-bold uppercase tracking-wider">
+                        Industrie minière
+                    </h3>
 
                 </div>
 
             </div>
 
-
-            <div class="group relative
-                        overflow-hidden
-                        h-72">
+            <!-- 4 -->
+            <div class="group relative overflow-hidden h-72">
 
                 <img
-                    src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
-                    alt="Metal fabrication project"
+                    src="https://images.pexels.com/photos/11118633/pexels-photo-11118633.jpeg"
+                    alt="Industrie forestière"
                     class="w-full h-full object-cover
                            group-hover:scale-110
                            duration-700">
 
-                <div class="absolute inset-0
-                            bg-black/0
-                            group-hover:bg-black/50
-                            duration-500">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/40 duration-500"></div>
+
+                <div class="absolute inset-x-0 bottom-0
+                            translate-y-full
+                            group-hover:translate-y-0
+                            duration-500
+                            bg-red-600/95
+                            text-white
+                            px-6 py-5">
+
+                    <h3 class="font-bold uppercase tracking-wider">
+                        Industrie forestière
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Dernière carte pleine largeur -->
+        <div class="mt-4">
+
+            <div class="group relative overflow-hidden h-72">
+
+                <img
+                    src="https://images.pexels.com/photos/15419937/pexels-photo-15419937.jpeg"
+                    alt="Travaux industriels sur chantier"
+                    class="w-full h-full object-cover
+                           group-hover:scale-110
+                           duration-700">
+
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/40 duration-500"></div>
+
+                <div class="absolute inset-x-0 bottom-0
+                            translate-y-full
+                            group-hover:translate-y-0
+                            duration-500
+                            bg-red-600/95
+                            text-white
+                            px-6 py-5">
+
+                    <h3 class="font-bold uppercase tracking-wider">
+                        Travaux industriels sur chantier
+                    </h3>
 
                 </div>
 
@@ -795,7 +808,7 @@ Notre équipe est prête à vous accompagner.
 
 </p>
 
-<a
+<a href="Contacto.html#form"
 class="inline-block mt-10 bg-white text-red-700 px-10 py-4 rounded font-bold">
 
 Demander une soumission
@@ -806,44 +819,8 @@ Demander une soumission
 
 </section>
 
-<!-- CONTACT -->
 
-<section class="py-24">
-
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-  
-
-<form class="space-y-5">
-
-<input
-class="w-full border p-4"
-placeholder="Nom">
-
-<input
-class="w-full border p-4"
-placeholder="Email">
-
-<textarea
-rows="5"
-class="w-full border p-4"
-placeholder="Message"></textarea>
-
-<button
-class="bg-red-700 text-white px-8 py-4">
-
-Envoyer
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-
-
-<div id="footer">
+<div id="footer" class="mt-20">
 
 <script src="js/components.js"></script>
 </body>

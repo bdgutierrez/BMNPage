@@ -34,123 +34,295 @@
     </section>
 
     <!-- CONTACT : FORMULAIRE + INFORMATIONS -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-5 gap-12">
-                <!-- Colonne formulaire (3/5) -->
-                <div class="lg:col-span-3">
-                    <div class="mb-10">
-                        <p class="text-red-600 uppercase tracking-[0.25em] text-sm font-semibold mb-3">Écrivez-nous</p>
-                        <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Demandez des informations ou un devis</h2>
-                        <p class="text-stone-500 mt-2">Remplissez le formulaire et nous vous répondrons dans les 24 heures.</p>
-                    </div>
-                    
-                    <form class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-1">Nom complet *</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-1">Entreprise (optionnel)</label>
-                                <input type="text" class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-stone-700 mb-1">Courriel *</label>
-                            <input type="email" required class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-stone-700 mb-1">Téléphone</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-stone-700 mb-1">Sujet *</label>
-                            <input type="text" required class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-stone-700 mb-1">Message *</label>
-                            <textarea rows="5" required class="w-full px-4 py-3 border border-stone-300 rounded-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition"></textarea>
-                        </div>
-                        <div class="flex items-start">
-                            <input type="checkbox" required class="mt-1 mr-3 accent-red-600 w-5 h-5">
-                            <span class="text-sm text-stone-500">J'accepte la <a href="#" class="text-red-600 hover:underline">politique de confidentialité</a> et le traitement de mes données.</span>
-                        </div>
-                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 font-semibold transition duration-300 rounded-sm flex items-center group">
-                            Envoyer le message
-                            <span class="ml-3 text-xl group-hover:translate-x-1 transition">→</span>
-                        </button>
-                    </form>
-                </div>
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-5 gap-12">
 
-                <!-- Colonne informations (2/5) -->
-                <div class="lg:col-span-2 bg-stone-50 p-8 rounded-sm border border-stone-200">
-                    <h3 class="text-2xl font-bold text-stone-900 mb-6">Coordonnées</h3>
-                    
-                    <div class="space-y-8">
-                        <div>
-                            <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">Adresse</p>
-                            <p class="text-stone-700 mt-1">Calle de la Metalurgia, 42<br>28042 Madrid, Espagne</p>
-                        </div>
-                        <div>
-                            <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">Téléphone</p>
-                            <p class="text-stone-700 mt-1">+34 910 123 456</p>
-                        </div>
-                        <div>
-                            <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">Courriel</p>
-                            <p class="text-stone-700 mt-1">info@bmn-services.com</p>
-                        </div>
-                        <div>
-                            <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">Horaire</p>
-                            <p class="text-stone-700 mt-1">Lun - Ven: 8h00 – 18h00<br>Samedis: sur rendez-vous</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-10 pt-8 border-t border-stone-200">
-                        <p class="text-sm font-semibold text-stone-800">Suivez-nous sur les réseaux</p>
-                        <div class="flex space-x-4 mt-3">
-                            <a href="#" class="text-stone-500 hover:text-red-600 transition text-xl">🔗</a>
-                            <a href="#" class="text-stone-500 hover:text-red-600 transition text-xl">📷</a>
-                            <a href="#" class="text-stone-500 hover:text-red-600 transition text-xl">💼</a>
-                        </div>
-                    </div>
-
-                    <!-- Carte ou image décorative (nuage) -->
-                    <div class="mt-8 rounded-sm overflow-hidden shadow-sm">
-                        <img src="https://images.pexels.com/photos/37359838/pexels-photo-37359838.png?auto=compress&cs=tinysrgb&w=600&h=300&dpr=1" 
-                             alt="Carte ou emplacement" 
-                             class="w-full h-40 object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MAP / EMPLACEMENT MIS EN AVANT (deuxième section de contact) -->
-    <section class="py-16 bg-stone-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div>
-                    <p class="text-red-600 uppercase tracking-[0.25em] text-sm font-semibold mb-3">Visitez-nous</p>
-                    <h2 class="text-3xl font-bold text-stone-900 mb-4">Nous sommes au cœur industriel</h2>
-                    <p class="text-stone-600 leading-relaxed">
-                        Nos installations disposent d'un atelier de 2 000 m² équipé des dernières technologies 
-                        en soudure et découpe. Si vous préférez, nous pouvons nous déplacer sur votre chantier ou usine 
-                        pour réaliser les travaux sur place.
+            <!-- Colonne formulaire (3/5) -->
+            <div class="lg:col-span-3" id="form">
+                <div class="mb-10">
+                    <p class="text-red-600 uppercase tracking-[0.25em] text-sm font-semibold mb-3">
+                        Écrivez-nous
                     </p>
-                    <div class="mt-6 flex flex-wrap gap-4">
-                        <span class="bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm">📐 Devis sans engagement</span>
-                        <span class="bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm">🔧 Conseil technique</span>
-                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">
+                        Demandez des informations ou un devis
+                    </h2>
+                    <p class="text-stone-500 mt-2">
+                        Remplissez le formulaire ci-dessous et notre équipe vous répondra dans un délai maximal de 12 heures.
+                    </p>
                 </div>
-                <div class="rounded-sm overflow-hidden shadow-lg">
-                    <img src="https://images.pexels.com/photos/30906309/pexels-photo-30906309.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" 
-                         alt="Atelier BMN" 
-                         class="w-full h-64 object-cover">
-                </div>
+
+                <form class="space-y-6" >
+
+    <!-- Nombre y Empresa -->
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <div>
+            <label class="block text-sm font-semibold text-stone-700 mb-2">
+                Nom complet <span class="text-red-600">*</span>
+            </label>
+
+            <div class="relative">
+                <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+                <input
+                    type="text"
+                    placeholder="Ex. Jean Tremblay"
+                    required
+                    class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
             </div>
         </div>
-    </section>
+
+        <div>
+            <label class="block text-sm font-semibold text-stone-700 mb-2">
+                Entreprise
+            </label>
+
+            <div class="relative">
+                <i class="fa-solid fa-building absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+                <input
+                    type="text"
+                    placeholder="Nom de votre entreprise"
+                    class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Email y teléfono -->
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <div>
+            <label class="block text-sm font-semibold text-stone-700 mb-2">
+                Courriel <span class="text-red-600">*</span>
+            </label>
+
+            <div class="relative">
+                <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+                <input
+                    type="email"
+                    placeholder="exemple@email.com"
+                    required
+                    class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-sm font-semibold text-stone-700 mb-2">
+                Téléphone
+            </label>
+
+            <div class="relative">
+                <i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+                <input
+                    type="tel"
+                    placeholder="418 000-0000"
+                    class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Servicio -->
+
+    <div>
+
+        <label class="block text-sm font-semibold text-stone-700 mb-2">
+            Service demandé
+        </label>
+
+        <div class="relative">
+
+            <i class="fa-solid fa-screwdriver-wrench absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+            <select
+                class="w-full appearance-none pl-12 pr-10 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+
+                <option>Choisissez un service</option>
+                <option>Soudure industrielle</option>
+                <option>Fabrication métallique</option>
+                <option>Réparation</option>
+                <option>Installation</option>
+                <option>Maintenance</option>
+                <option>Autre</option>
+
+            </select>
+
+            <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+
+        </div>
+
+    </div>
+
+    <!-- Prioridad -->
+
+    <div>
+
+        <label class="block text-sm font-semibold text-stone-700 mb-3">
+            Niveau d'urgence
+        </label>
+
+        <div class="grid md:grid-cols-3 gap-3">
+
+            <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
+                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+                Standard
+            </label>
+
+            <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
+                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+                Rapide
+            </label>
+
+            <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
+                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+                Urgent
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- Mensaje -->
+
+    <div>
+
+        <label class="block text-sm font-semibold text-stone-700 mb-2">
+            Décrivez votre projet
+        </label>
+
+        <textarea
+            rows="6"
+            placeholder="Décrivez les travaux souhaités, les dimensions, les matériaux ou toute autre information utile..."
+            class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition resize-none"></textarea>
+
+    </div>
+
+    <!-- Checkbox -->
+
+    <label class="flex items-start gap-3 cursor-pointer">
+
+        <input
+            type="checkbox"
+            required
+            class="mt-1 w-5 h-5 accent-red-600">
+
+        <span class="text-sm text-stone-500">
+            J'accepte la
+            <a href="#" class="text-red-600 hover:underline">
+                politique de confidentialité
+            </a>
+            et le traitement de mes données.
+        </span>
+
+    </label>
+
+    <!-- Botón -->
+
+    <button
+        type="submit"
+        class="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-10 py-4 rounded-md transition flex items-center justify-center gap-3">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Envoyer ma demande
+
+    </button>
+
+</form>
+            </div>
+
+            <!-- Colonne informations (2/5) -->
+            <div class="lg:col-span-2 bg-stone-50 p-8 rounded-sm border border-stone-200">
+
+                <h3 class="text-2xl font-bold text-stone-900 mb-6">
+                    Coordonnées
+                </h3>
+
+                <div class="space-y-8">
+
+                    <div>
+                        <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">
+                            Téléphone
+                        </p>
+                        <a href="tel:+14183329841"
+                            class="text-stone-700 mt-1 block hover:text-red-600 transition">
+                            418 332-9841
+                        </a>
+                    </div>
+
+                    <div>
+                        <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">
+                            Courriel
+                        </p>
+                        <a href="mailto:info@bmnsoudure.com"
+                            class="text-stone-700 mt-1 block hover:text-red-600 transition">
+                            info@bmnsoudure.com
+                        </a>
+                    </div>
+
+                    <div>
+                        <p class="text-sm uppercase tracking-wider text-stone-400 font-semibold">
+                            Horaire
+                        </p>
+                        <p class="text-stone-700 mt-1">
+                            Lun - Ven : 8h00 – 18h00<br>
+                            Samedis : sur rendez-vous
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <div class="mt-10 pt-8 border-t border-stone-200">
+
+                    <p class="text-sm font-semibold text-stone-800 mb-5">
+                        Suivez-nous sur les réseaux
+                    </p>
+
+                    <div class="space-y-4">
+
+                        <a href="https://www.facebook.com/"
+                            target="_blank"
+                            class="flex items-center gap-4 text-stone-700 hover:text-red-600 transition group">
+
+                            <div class="w-11 h-11 rounded-full border border-stone-300 bg-white flex items-center justify-center transition group-hover:bg-red-600 group-hover:border-red-600">
+                                <i class="fab fa-facebook-f text-lg group-hover:text-white"></i>
+                            </div>
+
+                            <span class="font-medium">
+                                Facebook
+                            </span>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                            target="_blank"
+                            class="flex items-center gap-4 text-stone-700 hover:text-red-600 transition group">
+
+                            <div class="w-11 h-11 rounded-full border border-stone-300 bg-white flex items-center justify-center transition group-hover:bg-red-600 group-hover:border-red-600">
+                                <i class="fab fa-instagram text-lg group-hover:text-white"></i>
+                            </div>
+
+                            <span class="font-medium">
+                                Instagram
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- FOIRE AUX QUESTIONS (FAQ) - supplémentaire -->
     <section class="py-20 bg-white">
@@ -160,17 +332,14 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Foire aux questions</h2>
             </div>
             <div class="space-y-4">
-                <div class="border border-stone-200 rounded-sm p-5 hover:bg-stone-50 transition">
-                    <h3 class="font-bold text-stone-800">Livrez-vous partout au Québec et au Canada ?</h3>
-                    <p class="text-stone-600 text-sm mt-1">Oui, nous travaillons avec des transporteurs professionnels pour tout le Québec, le Canada et même les États-Unis. Nous réalisons également des installations sur place.</p>
-                </div>
+                
                 <div class="border border-stone-200 rounded-sm p-5 hover:bg-stone-50 transition">
                     <h3 class="font-bold text-stone-800">Quels matériaux utilisez-vous ?</h3>
-                    <p class="text-stone-600 text-sm mt-1">Acier au carbone, inoxydable, aluminium et alliages spéciaux selon les besoins du projet.</p>
+                    <p class="text-stone-600 text-sm mt-1">acier, acier inoxydable et aluminium</p>
                 </div>
                 <div class="border border-stone-200 rounded-sm p-5 hover:bg-stone-50 transition">
                     <h3 class="font-bold text-stone-800">Offrez-vous une garantie ?</h3>
-                    <p class="text-stone-600 text-sm mt-1">Toutes nos soudures et fabrications sont garanties 3 ans contre les défauts d'exécution.</p>
+                    <p class="text-stone-600 text-sm mt-1">Toutes nos soudures et fabrications sont garanties.</p>
                 </div>
                 <div class="border border-stone-200 rounded-sm p-5 hover:bg-stone-50 transition">
                     <h3 class="font-bold text-stone-800">Travaillez-vous autant avec des entreprises qu'avec des particuliers ?</h3>
@@ -190,13 +359,13 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
             <p class="text-red-500 uppercase tracking-[0.25em] text-sm font-semibold mb-4">Appel direct</p>
             <h2 class="text-3xl md:text-4xl text-white font-bold">Préférez-vous parler par téléphone ?</h2>
-            <p class="text-stone-400 mt-4 text-lg">Appelez au <span class="text-white font-bold">+34 910 123 456</span> et discutez directement avec notre équipe technique.</p>
+            <p class="text-stone-400 mt-4 text-lg">Appelez au <span class="text-white font-bold">418 332-9841</span> et discutez directement avec notre équipe technique.</p>
             <p class="text-stone-500 text-sm mt-2">Disponible de 8h00 à 18h00 (heure de la péninsule)</p>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer id="footer" class="mt-20">
     </footer>
 
     <script src="js/components.js"></script>

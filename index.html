@@ -29,11 +29,125 @@ background-size:cover;
 
 }
 
+#loader{
+    position:fixed;
+    inset:0;
+    background:#0c0c0c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:99999;
+    transition:.8s;
+}
+
+#loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-logo{
+    width:180px;
+    margin-bottom:60px;
+}
+
+.welding-line{
+    position:relative;
+    width:260px;
+    height:4px;
+    background:#333;
+    overflow:visible;
+}
+
+.torch{
+    position:absolute;
+    top:-8px;
+    left:0;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:white;
+    box-shadow:
+        0 0 12px #fff,
+        0 0 30px #00b7ff,
+        0 0 60px #00d5ff;
+
+    animation:weld 2.8s linear infinite;
+}
+
+.torch::before,
+.torch::after{
+    content:"";
+    position:absolute;
+    width:3px;
+    height:14px;
+    background:#ff9d00;
+    border-radius:10px;
+    opacity:.9;
+}
+
+.torch::before{
+    left:2px;
+    animation:spark .35s linear infinite;
+}
+
+.torch::after{
+    left:12px;
+    animation:spark .45s linear infinite;
+}
+
+@keyframes weld{
+
+    0%{
+        left:0;
+    }
+
+    50%{
+        left:240px;
+    }
+
+    100%{
+        left:0;
+    }
+
+}
+
+@keyframes spark{
+
+    from{
+        transform:translateY(0) rotate(-15deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(35px) translateX(8px) rotate(20deg);
+        opacity:0;
+    }
+
+}
+
 </style>
 
 </head>
 
 <body class="bg-white text-white">
+
+<!-- =========================
+    Animacion
+
+<div id="loader">
+
+    <img src="img/logo.png" class="loader-logo" alt="BMN">
+
+    <div class="welding-line">
+
+        <div class="torch"></div>
+
+    </div>
+
+</div>
+========================= -->
+
 
 <div id="menu"></div>
 
@@ -115,9 +229,8 @@ background-size:cover;
            leading-relaxed
            max-w-lg">
 
-    Des solutions professionnelles en soudage,
-    en fabrication métallique et en acier de structure,
-    conçues pour durer partout au Québec.
+    BMN SERVICES DE SOUDURE offre ses services à tous, que ce soit dans la minière, dans l’alimentation, l’agriculture, et bien d'autres domaines. On peut travailler sur tout type de surface avec une expertise de qualité depuis plus de 20 ans. Que ce soit du stainless,
+     de l’acier ou même de l’aluminium nos experts n’auront aucun problème à vous satisfaire.
 
 </p>
 
@@ -259,7 +372,7 @@ background-size:cover;
                 <div class="relative h-64 overflow-hidden">
 
                     <img
-                        src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85"
+                        src="img/s1.png"
                         alt="Fabrication métallique"
                         class="w-full h-full object-cover
                                group-hover:scale-110
@@ -316,7 +429,7 @@ background-size:cover;
                 <div class="relative h-64 overflow-hidden">
 
                     <img
-                        src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1000&q=85"
+                        src="img/s2.png"
                         alt="Soudure structurale"
                         class="w-full h-full object-cover
                                group-hover:scale-110
@@ -374,7 +487,7 @@ background-size:cover;
                 <div class="relative h-64 overflow-hidden">
 
                     <img
-                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                        src="img/s3.png"
                         alt="Services mobiles"
                         class="w-full h-full object-cover
                                group-hover:scale-110
@@ -757,10 +870,10 @@ background-size:cover;
         <!-- Dernière carte pleine largeur -->
         <div class="mt-4">
 
-            <div class="group relative overflow-hidden h-72">
+            <div class="group relative overflow-hidden h-96">
 
                 <img
-                    src="https://images.pexels.com/photos/15419937/pexels-photo-15419937.jpeg"
+                    src="img/s2.png"
                     alt="Travaux industriels sur chantier"
                     class="w-full h-full object-cover
                            group-hover:scale-110
@@ -821,6 +934,19 @@ Demander une soumission
 
 
 <div id="footer" class="mt-20">
+    
+    <script>window.addEventListener("load", ()=>{
+
+    setTimeout(()=>{
+
+        document
+            .getElementById("loader")
+            .classList
+            .add("hide");
+
+    },1800);
+
+});</script>
 
 <script src="js/components.js"></script>
 </body>

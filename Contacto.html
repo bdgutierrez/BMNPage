@@ -18,7 +18,7 @@
         <div class="absolute inset-0">
             <img src="https://images.pexels.com/photos/15419937/pexels-photo-15419937.jpeg" 
                  alt="Contactez BMN Services" 
-                 class="w-full h-full object-cover opacity-30">
+                 class="w-full h-full object-cover opacity-40">
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -45,90 +45,127 @@
                         Écrivez-nous
                     </p>
                     <h2 class="text-3xl md:text-4xl font-bold text-stone-900">
-                        Demandez des informations ou un devis
+                        Demandez des informations ou un summision
                     </h2>
                     <p class="text-stone-500 mt-2">
                         Remplissez le formulaire ci-dessous et notre équipe vous répondra dans un délai maximal de 12 heures.
                     </p>
                 </div>
 
-                <form class="space-y-6" >
+
+
+
+
+
+
+               <form
+    action="https://formsubmit.co/Info@bmnsoudure.ca"
+    method="POST"
+    class="space-y-6">
+
+    <!-- Configuración -->
+    <input type="hidden" name="_subject" value="Nouvelle demande de soumission - BMN Services de Soudure">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Cambia esta URL por la de tu página de gracias -->
+    <input type="hidden" name="_next" value="https://bdgutierrez.github.io/BMNPage/Contacto.html">
+
+    <!-- Honeypot anti-spam -->
+    <input type="text" name="_honey" style="display:none">
 
     <!-- Nombre y Empresa -->
     <div class="grid md:grid-cols-2 gap-6">
 
         <div>
+
             <label class="block text-sm font-semibold text-stone-700 mb-2">
                 Nom complet <span class="text-red-600">*</span>
             </label>
 
             <div class="relative">
+
                 <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
 
                 <input
+                    name="Nom complet"
                     type="text"
                     placeholder="Ex. Jean Tremblay"
                     required
                     class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+
             </div>
+
         </div>
 
         <div>
+
             <label class="block text-sm font-semibold text-stone-700 mb-2">
                 Entreprise
             </label>
 
             <div class="relative">
+
                 <i class="fa-solid fa-building absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
 
                 <input
+                    name="Entreprise"
                     type="text"
                     placeholder="Nom de votre entreprise"
                     class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+
             </div>
+
         </div>
 
     </div>
 
-    <!-- Email y teléfono -->
-
+    <!-- Courriel et téléphone -->
     <div class="grid md:grid-cols-2 gap-6">
 
         <div>
+
             <label class="block text-sm font-semibold text-stone-700 mb-2">
                 Courriel <span class="text-red-600">*</span>
             </label>
 
             <div class="relative">
+
                 <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
 
                 <input
+                    name="Courriel"
                     type="email"
                     placeholder="exemple@email.com"
                     required
                     class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+
             </div>
+
         </div>
 
         <div>
+
             <label class="block text-sm font-semibold text-stone-700 mb-2">
                 Téléphone
             </label>
 
             <div class="relative">
+
                 <i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
 
                 <input
+                    name="Téléphone"
                     type="tel"
                     placeholder="418 000-0000"
                     class="w-full pl-12 pr-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+
             </div>
+
         </div>
 
     </div>
 
-    <!-- Servicio -->
-
+    <!-- Service -->
     <div>
 
         <label class="block text-sm font-semibold text-stone-700 mb-2">
@@ -140,15 +177,16 @@
             <i class="fa-solid fa-screwdriver-wrench absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
 
             <select
+                name="Service demandé"
                 class="w-full appearance-none pl-12 pr-10 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
 
-                <option>Choisissez un service</option>
-                <option>Soudure industrielle</option>
-                <option>Fabrication métallique</option>
-                <option>Réparation</option>
-                <option>Installation</option>
-                <option>Maintenance</option>
-                <option>Autre</option>
+                <option value="Choisissez un service">Choisissez un service</option>
+                <option value="Soudage industriel">Soudage industriel</option>
+                <option value="Fabrication métallique">Fabrication métallique</option>
+                <option value="Réparation">Réparation</option>
+                <option value="Installation">Installation</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Autre">Autre</option>
 
             </select>
 
@@ -158,8 +196,7 @@
 
     </div>
 
-    <!-- Prioridad -->
-
+    <!-- Urgence -->
     <div>
 
         <label class="block text-sm font-semibold text-stone-700 mb-3">
@@ -169,26 +206,46 @@
         <div class="grid md:grid-cols-3 gap-3">
 
             <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
-                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+
+                <input
+                    type="radio"
+                    name="Niveau d'urgence"
+                    value="Standard"
+                    class="accent-red-600 mr-2">
+
                 Standard
+
             </label>
 
             <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
-                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+
+                <input
+                    type="radio"
+                    name="Niveau d'urgence"
+                    value="Rapide"
+                    class="accent-red-600 mr-2">
+
                 Rapide
+
             </label>
 
             <label class="cursor-pointer border rounded-md p-4 hover:border-red-600 transition">
-                <input type="radio" name="urgence" class="accent-red-600 mr-2">
+
+                <input
+                    type="radio"
+                    name="Niveau d'urgence"
+                    value="Urgent"
+                    class="accent-red-600 mr-2">
+
                 Urgent
+
             </label>
 
         </div>
 
     </div>
 
-    <!-- Mensaje -->
-
+    <!-- Message -->
     <div>
 
         <label class="block text-sm font-semibold text-stone-700 mb-2">
@@ -196,14 +253,14 @@
         </label>
 
         <textarea
+            name="Description du projet"
             rows="6"
             placeholder="Décrivez les travaux souhaités, les dimensions, les matériaux ou toute autre information utile..."
             class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition resize-none"></textarea>
 
     </div>
 
-    <!-- Checkbox -->
-
+    <!-- Consentement -->
     <label class="flex items-start gap-3 cursor-pointer">
 
         <input
@@ -216,13 +273,12 @@
             <a href="#" class="text-red-600 hover:underline">
                 politique de confidentialité
             </a>
-            et le traitement de mes données.
+            et le traitement de mes renseignements personnels.
         </span>
 
     </label>
 
-    <!-- Botón -->
-
+    <!-- Bouton -->
     <button
         type="submit"
         class="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-10 py-4 rounded-md transition flex items-center justify-center gap-3">
@@ -234,6 +290,11 @@
     </button>
 
 </form>
+
+
+
+
+
             </div>
 
             <!-- Colonne informations (2/5) -->
@@ -251,7 +312,8 @@
                         </p>
                         <a href="tel:+14183329841"
                             class="text-stone-700 mt-1 block hover:text-red-600 transition">
-                            418 332-9841
+                            Gerente General: 418 332-9841<br>
+                            Gerente de proyecto: 418 814-4814
                         </a>
                     </div>
 
@@ -351,7 +413,7 @@
 
     <!-- CTA FINAL (avec image nuage) -->
     <section class="relative bg-stone-950 py-16 overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-20">
             <img src="https://images.pexels.com/photos/28346079/pexels-photo-28346079.jpeg" 
                  alt="fond soudure" 
                  class="w-full h-full object-cover">
@@ -359,8 +421,8 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
             <p class="text-red-500 uppercase tracking-[0.25em] text-sm font-semibold mb-4">Appel direct</p>
             <h2 class="text-3xl md:text-4xl text-white font-bold">Préférez-vous parler par téléphone ?</h2>
-            <p class="text-stone-400 mt-4 text-lg">Appelez au <span class="text-white font-bold">418 332-9841</span> et discutez directement avec notre équipe technique.</p>
-            <p class="text-stone-500 text-sm mt-2">Disponible de 8h00 à 18h00 (heure de la péninsule)</p>
+            <p class="text-stone-400 mt-4 text-lg">Appelez au <span class="text-white font-bold">418 332-9841 o 418 814-4814</span> et discutez directement avec notre équipe technique.</p>
+            <p class="text-stone-500 text-sm mt-2">Disponible de 8h00 à 18h00</p>
         </div>
     </section>
 
